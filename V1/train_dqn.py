@@ -5,6 +5,9 @@ from collections import deque
 from skimage.color import rgb2gray
 from skimage.transform import resize
 from dqn_agent import DQNAgent
+if not hasattr(np, 'bool8'):
+    np.bool8 = np.bool_
+
 
 # Preprocess game frames to simplify the input
 def preprocess_frame(frame):
@@ -22,7 +25,7 @@ def stack_frames(frames, frame, is_new_episode):
 
 # Main training loop
 # env = gym.make('Breakout-v4', render_mode='human')  # Rendering disabled for faster training
-env = gym.make('Breakout-v4')
+env = gym.make('ALE/Breakout-v5')
 agent = DQNAgent(env.action_space.n)
 num_episodes = 2000
 batch_size = 32
