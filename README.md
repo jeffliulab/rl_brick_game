@@ -9,13 +9,13 @@ This is one of two parts of my Tufts University's Reinforcement Learning course'
 This part is a simplified prototype of the Breakout game environment designed to evaluate the performance of Q-learning in a discrete setting. The game is implemented on a 10x10 grid, featuring a paddle, ball, and bricks. The paddle is fixed at the bottom, the ball moves with a fixed vertical velocity and a random horizontal direction, and the bricks are arranged in a single row at the top.
 
 The demo's running graph is:
-<img src="docs/readme/simple_demo/simple_1.png" width="400" />
+- <img src="docs/readme/simple_demo/simple_1.png" width="400" />
 
 After learning, the agent can successfully play the game and eliminate all the bricks:
-<img src="docs/readme/simple_demo/simple_2.png" width="400" />
+- <img src="docs/readme/simple_demo/simple_2.png" width="400" />
 
 The learning curve is shown below:
-<img src="docs/readme/simple_demo/simple_3.png" width="800" />
+- <img src="docs/readme/simple_demo/simple_3.png" width="800" />
 
 ### Environment Details
 - **Grid**: 10x10 discrete grid.
