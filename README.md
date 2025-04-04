@@ -74,7 +74,6 @@ This prototype provides a practical example for evaluating Q-learning in a simpl
 ### License
 This project is licensed under the MIT License.
 
-## End-to-End DQN Training
 
 ## End-to-End DQN Training
 
@@ -125,9 +124,6 @@ Under these circumstances, traditional tabular Q-learning fails because the stat
 A typical learning curve might show the **evaluation score** (e.g., average episode reward) increasing as training progresses. For instance:
 
 <img src="docs/output_save/dqn_200k.png" alt="DQN Learning Curve in 100,000 episodes" width="800" />
-
-- **X-axis**: Number of training iterations or environment steps.  
-- **Y-axis**: Average return (e.g., total reward) over multiple test episodes.
 
 ### Implementation Notes
 
