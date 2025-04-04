@@ -76,7 +76,7 @@ def run_game(env, screen, scale_factor=4):
     }
 
     done = False
-    frame_delay = 0.05  # 控制帧率（秒）, 0.02=50fps, 0.05=20fps
+    frame_delay = 0.02  # 控制帧率（秒）, 0.02=50fps, 0.05=20fps
 
     # 重置环境并获取初始观察
     observation, info = env.reset()
