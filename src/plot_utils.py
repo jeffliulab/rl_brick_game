@@ -4,6 +4,8 @@
 """
 
 import os
+# 在导入matplotlib前设置环境变量
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 import numpy as np
 import matplotlib.pyplot as plt
 import torch

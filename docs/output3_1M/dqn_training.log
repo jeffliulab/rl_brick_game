@@ -1,0 +1,572 @@
+2025-04-30 13:45:39,349 - INFO - Starting DQN training script
+2025-04-30 13:45:39,420 - INFO - Number of actions: 4
+2025-04-30 13:45:39,420 - INFO - Initial Memory usage: 490.79 MB
+2025-04-30 13:45:42,765 - INFO - Total system memory: 31.73 GB
+2025-04-30 13:45:42,775 - INFO - Filling replay buffer with 50000 steps, please wait...
+2025-04-30 13:45:59,174 - INFO - Buffer fill 10000 steps Memory usage: 1471.99 MB
+2025-04-30 13:46:15,764 - INFO - Buffer fill 20000 steps Memory usage: 2027.41 MB
+2025-04-30 13:46:31,294 - INFO - Buffer fill 30000 steps Memory usage: 2581.82 MB
+2025-04-30 13:46:46,801 - INFO - Buffer fill 40000 steps Memory usage: 3137.03 MB
+2025-04-30 13:47:02,458 - INFO - Buffer fill 50000 steps Memory usage: 3691.68 MB
+2025-04-30 13:47:02,526 - INFO - Start DQN training...
+2025-04-30 13:47:02,793 - INFO - Iteration 0: Target network updated
+2025-04-30 13:47:02,793 - INFO - Iteration 0 Memory usage: 4031.50 MB
+2025-04-30 13:47:02,793 - INFO - Iteration 0, Buffer size: 50010, Epsilon: 1.000
+2025-04-30 13:47:44,221 - INFO - Evaluation: average reward over 3 games: 0.00
+2025-04-30 13:47:44,222 - INFO - Iteration 0, Eval average reward: 0.00, Replay size: 50010, Epsilon: 1.000, LR: 0.000100
+2025-04-30 13:47:45,899 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_50.pt
+2025-04-30 13:47:45,909 - INFO - Model saved to output/models/dqn_model_atari_50.pt
+2025-04-30 13:49:23,461 - INFO - Starting DQN training script
+2025-04-30 13:49:23,525 - INFO - Number of actions: 4
+2025-04-30 13:49:23,525 - INFO - Initial Memory usage: 491.11 MB
+2025-04-30 13:49:27,051 - INFO - Total system memory: 31.73 GB
+2025-04-30 13:49:27,060 - INFO - Filling replay buffer with 50000 steps, please wait...
+2025-04-30 13:49:42,780 - INFO - Buffer fill 10000 steps Memory usage: 1471.70 MB
+2025-04-30 13:49:58,995 - INFO - Buffer fill 20000 steps Memory usage: 2027.47 MB
+2025-04-30 13:50:15,289 - INFO - Buffer fill 30000 steps Memory usage: 2581.82 MB
+2025-04-30 13:50:32,461 - INFO - Buffer fill 40000 steps Memory usage: 3137.24 MB
+2025-04-30 13:50:46,538 - INFO - Buffer fill 50000 steps Memory usage: 3691.76 MB
+2025-04-30 13:50:46,600 - INFO - Start DQN training...
+2025-04-30 13:50:46,731 - INFO - Iteration 0: Target network updated
+2025-04-30 13:50:46,732 - INFO - Iteration 0 Memory usage: 4031.75 MB
+2025-04-30 13:50:46,732 - INFO - Iteration 0, Buffer size: 50010, Epsilon: 1.000
+2025-04-30 13:51:20,961 - INFO - Evaluation: average reward over 3 games: 0.67
+2025-04-30 13:51:20,961 - INFO - Iteration 0, Eval average reward: 0.67, Replay size: 50010, Epsilon: 1.000, LR: 0.000100
+2025-04-30 13:51:22,026 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_50.pt
+2025-04-30 13:51:22,033 - INFO - Model saved to output/models/dqn_model_atari_50.pt
+2025-04-30 13:51:22,978 - INFO - Training curves at iteration 50 saved.
+2025-04-30 13:51:22,981 - INFO - Training history at iteration 50 saved to output/history/training_history_iter_50.npz
+2025-04-30 13:51:24,143 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_100.pt
+2025-04-30 13:51:24,150 - INFO - Model saved to output/models/dqn_model_atari_100.pt
+2025-04-30 13:51:24,848 - INFO - Training curves at iteration 100 saved.
+2025-04-30 13:51:24,849 - INFO - Training history at iteration 100 saved to output/history/training_history_iter_100.npz
+2025-04-30 13:54:40,500 - INFO - Iteration 10000: Target network updated
+2025-04-30 13:54:40,500 - INFO - Iteration 10000 Memory usage: 6901.93 MB
+2025-04-30 13:54:40,500 - INFO - Iteration 10000, Buffer size: 100000, Epsilon: 0.990
+2025-04-30 13:57:56,280 - INFO - Iteration 20000: Target network updated
+2025-04-30 13:57:56,280 - INFO - Iteration 20000 Memory usage: 6873.48 MB
+2025-04-30 13:57:56,280 - INFO - Iteration 20000, Buffer size: 100000, Epsilon: 0.980
+2025-04-30 14:01:08,062 - INFO - Iteration 30000: Target network updated
+2025-04-30 14:01:08,063 - INFO - Iteration 30000 Memory usage: 6874.19 MB
+2025-04-30 14:01:08,063 - INFO - Iteration 30000, Buffer size: 100000, Epsilon: 0.970
+2025-04-30 14:04:19,847 - INFO - Iteration 40000: Target network updated
+2025-04-30 14:04:19,848 - INFO - Iteration 40000 Memory usage: 6874.98 MB
+2025-04-30 14:04:19,848 - INFO - Iteration 40000, Buffer size: 100000, Epsilon: 0.960
+2025-04-30 14:07:28,423 - INFO - Iteration 50000: Target network updated
+2025-04-30 14:07:28,424 - INFO - Iteration 50000 Memory usage: 6875.79 MB
+2025-04-30 14:07:28,424 - INFO - Iteration 50000, Buffer size: 100000, Epsilon: 0.951
+2025-04-30 14:07:30,429 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 14:07:30,430 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:07:30,430 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:07:30,430 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 14:07:30,430 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:394: size=8615 KiB (+8615 KiB), count=101557 (+101557), average=87 B
+2025-04-30 14:07:30,430 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:257: size=5031 KiB (+5031 KiB), count=100281 (+100281), average=51 B
+2025-04-30 14:08:04,166 - INFO - Evaluation: average reward over 3 games: 0.00
+2025-04-30 14:08:04,166 - INFO - Iteration 50000, Eval average reward: 0.00, Replay size: 100000, Epsilon: 0.951, LR: 0.000100
+2025-04-30 14:08:04,360 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_50000.pt
+2025-04-30 14:08:04,368 - INFO - Model saved to output/models/dqn_model_atari_50000.pt
+2025-04-30 14:08:05,169 - INFO - Training curves at iteration 50000 saved.
+2025-04-30 14:08:05,178 - INFO - Training history at iteration 50000 saved to output/history/training_history_iter_50000.npz
+2025-04-30 14:11:12,642 - INFO - Iteration 60000: Target network updated
+2025-04-30 14:11:12,642 - INFO - Iteration 60000 Memory usage: 7039.70 MB
+2025-04-30 14:11:12,643 - INFO - Iteration 60000, Buffer size: 100000, Epsilon: 0.941
+2025-04-30 14:14:21,271 - INFO - Iteration 70000: Target network updated
+2025-04-30 14:14:21,271 - INFO - Iteration 70000 Memory usage: 7000.99 MB
+2025-04-30 14:14:21,272 - INFO - Iteration 70000, Buffer size: 100000, Epsilon: 0.931
+2025-04-30 14:17:29,473 - INFO - Iteration 80000: Target network updated
+2025-04-30 14:17:29,473 - INFO - Iteration 80000 Memory usage: 7001.85 MB
+2025-04-30 14:17:29,473 - INFO - Iteration 80000, Buffer size: 100000, Epsilon: 0.921
+2025-04-30 14:20:39,117 - INFO - Iteration 90000: Target network updated
+2025-04-30 14:20:39,117 - INFO - Iteration 90000 Memory usage: 7002.70 MB
+2025-04-30 14:20:39,117 - INFO - Iteration 90000, Buffer size: 100000, Epsilon: 0.911
+2025-04-30 14:23:51,043 - INFO - Iteration 100000: Target network updated
+2025-04-30 14:23:51,043 - INFO - Iteration 100000 Memory usage: 7003.55 MB
+2025-04-30 14:23:51,044 - INFO - Iteration 100000, Buffer size: 100000, Epsilon: 0.901
+2025-04-30 14:23:53,258 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 14:23:53,259 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:23:53,259 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:23:53,259 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 14:23:53,260 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:394: size=8615 KiB (+8615 KiB), count=101557 (+101557), average=87 B
+2025-04-30 14:23:53,260 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:257: size=5032 KiB (+5032 KiB), count=100284 (+100284), average=51 B
+2025-04-30 14:23:54,240 - INFO - Evaluation: average reward over 3 games: 0.00
+2025-04-30 14:23:54,240 - INFO - Iteration 100000, Eval average reward: 0.00, Replay size: 100000, Epsilon: 0.901, LR: 0.000100
+2025-04-30 14:23:54,488 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_100000.pt
+2025-04-30 14:23:54,496 - INFO - Model saved to output/models/dqn_model_atari_100000.pt
+2025-04-30 14:23:55,344 - INFO - Training curves at iteration 100000 saved.
+2025-04-30 14:23:55,355 - INFO - Training history at iteration 100000 saved to output/history/training_history_iter_100000.npz
+2025-04-30 14:27:08,351 - INFO - Iteration 110000: Target network updated
+2025-04-30 14:27:08,351 - INFO - Iteration 110000 Memory usage: 7090.31 MB
+2025-04-30 14:27:08,351 - INFO - Iteration 110000, Buffer size: 100000, Epsilon: 0.891
+2025-04-30 14:30:19,035 - INFO - Iteration 120000: Target network updated
+2025-04-30 14:30:19,036 - INFO - Iteration 120000 Memory usage: 7033.65 MB
+2025-04-30 14:30:19,036 - INFO - Iteration 120000, Buffer size: 100000, Epsilon: 0.881
+2025-04-30 14:33:30,380 - INFO - Iteration 130000: Target network updated
+2025-04-30 14:33:30,380 - INFO - Iteration 130000 Memory usage: 7037.67 MB
+2025-04-30 14:33:30,380 - INFO - Iteration 130000, Buffer size: 100000, Epsilon: 0.871
+2025-04-30 14:36:43,360 - INFO - Iteration 140000: Target network updated
+2025-04-30 14:36:43,360 - INFO - Iteration 140000 Memory usage: 7038.71 MB
+2025-04-30 14:36:43,361 - INFO - Iteration 140000, Buffer size: 100000, Epsilon: 0.861
+2025-04-30 14:39:56,365 - INFO - Iteration 150000: Target network updated
+2025-04-30 14:39:56,366 - INFO - Iteration 150000 Memory usage: 7039.75 MB
+2025-04-30 14:39:56,366 - INFO - Iteration 150000, Buffer size: 100000, Epsilon: 0.852
+2025-04-30 14:39:58,728 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 14:39:58,728 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:39:58,729 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:39:58,729 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 14:39:58,729 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:394: size=8615 KiB (+8615 KiB), count=101557 (+101557), average=87 B
+2025-04-30 14:39:58,729 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:257: size=5032 KiB (+5032 KiB), count=100283 (+100283), average=51 B
+2025-04-30 14:39:59,655 - INFO - Evaluation: average reward over 3 games: 0.00
+2025-04-30 14:39:59,655 - INFO - Iteration 150000, Eval average reward: 0.00, Replay size: 100000, Epsilon: 0.852, LR: 0.000100
+2025-04-30 14:39:59,972 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_150000.pt
+2025-04-30 14:39:59,981 - INFO - Model saved to output/models/dqn_model_atari_150000.pt
+2025-04-30 14:40:00,955 - INFO - Training curves at iteration 150000 saved.
+2025-04-30 14:40:00,980 - INFO - Training history at iteration 150000 saved to output/history/training_history_iter_150000.npz
+2025-04-30 14:43:14,884 - INFO - Iteration 160000: Target network updated
+2025-04-30 14:43:14,884 - INFO - Iteration 160000 Memory usage: 7142.39 MB
+2025-04-30 14:43:14,884 - INFO - Iteration 160000, Buffer size: 100000, Epsilon: 0.842
+2025-04-30 14:46:24,400 - INFO - Iteration 170000: Target network updated
+2025-04-30 14:46:24,401 - INFO - Iteration 170000 Memory usage: 7066.87 MB
+2025-04-30 14:46:24,401 - INFO - Iteration 170000, Buffer size: 100000, Epsilon: 0.832
+2025-04-30 14:49:43,478 - INFO - Iteration 180000: Target network updated
+2025-04-30 14:49:43,479 - INFO - Iteration 180000 Memory usage: 7067.75 MB
+2025-04-30 14:49:43,479 - INFO - Iteration 180000, Buffer size: 100000, Epsilon: 0.822
+2025-04-30 14:52:54,021 - INFO - Iteration 190000: Target network updated
+2025-04-30 14:52:54,021 - INFO - Iteration 190000 Memory usage: 7068.74 MB
+2025-04-30 14:52:54,022 - INFO - Iteration 190000, Buffer size: 100000, Epsilon: 0.812
+2025-04-30 14:56:06,619 - INFO - Iteration 200000: Target network updated
+2025-04-30 14:56:06,620 - INFO - Iteration 200000 Memory usage: 7069.68 MB
+2025-04-30 14:56:06,620 - INFO - Iteration 200000, Buffer size: 100000, Epsilon: 0.802
+2025-04-30 14:56:09,141 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 14:56:09,141 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:56:09,141 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 14:56:09,141 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 14:56:09,142 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:394: size=8615 KiB (+8615 KiB), count=101557 (+101557), average=87 B
+2025-04-30 14:56:09,142 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:257: size=5031 KiB (+5031 KiB), count=100281 (+100281), average=51 B
+2025-04-30 14:56:44,578 - INFO - Evaluation: average reward over 3 games: 0.00
+2025-04-30 14:56:44,579 - INFO - Iteration 200000, Eval average reward: 0.00, Replay size: 100000, Epsilon: 0.802, LR: 0.000100
+2025-04-30 14:56:44,958 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_200000.pt
+2025-04-30 14:56:44,967 - INFO - Model saved to output/models/dqn_model_atari_200000.pt
+2025-04-30 14:56:46,008 - INFO - Training curves at iteration 200000 saved.
+2025-04-30 14:56:46,029 - INFO - Training history at iteration 200000 saved to output/history/training_history_iter_200000.npz
+2025-04-30 14:59:57,000 - INFO - Iteration 210000: Target network updated
+2025-04-30 14:59:57,001 - INFO - Iteration 210000 Memory usage: 7201.90 MB
+2025-04-30 14:59:57,001 - INFO - Iteration 210000, Buffer size: 100000, Epsilon: 0.792
+2025-04-30 15:03:07,046 - INFO - Iteration 220000: Target network updated
+2025-04-30 15:03:07,046 - INFO - Iteration 220000 Memory usage: 7112.63 MB
+2025-04-30 15:03:07,047 - INFO - Iteration 220000, Buffer size: 100000, Epsilon: 0.782
+2025-04-30 15:06:18,943 - INFO - Iteration 230000: Target network updated
+2025-04-30 15:06:18,944 - INFO - Iteration 230000 Memory usage: 7113.52 MB
+2025-04-30 15:06:18,944 - INFO - Iteration 230000, Buffer size: 100000, Epsilon: 0.772
+2025-04-30 15:09:29,457 - INFO - Iteration 240000: Target network updated
+2025-04-30 15:09:29,457 - INFO - Iteration 240000 Memory usage: 7114.51 MB
+2025-04-30 15:09:29,457 - INFO - Iteration 240000, Buffer size: 100000, Epsilon: 0.762
+2025-04-30 15:12:39,483 - INFO - Iteration 250000: Target network updated
+2025-04-30 15:12:39,484 - INFO - Iteration 250000 Memory usage: 7115.47 MB
+2025-04-30 15:12:39,484 - INFO - Iteration 250000, Buffer size: 100000, Epsilon: 0.752
+2025-04-30 15:12:42,147 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 15:12:42,147 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 15:12:42,148 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 15:12:42,148 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 15:12:42,148 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:394: size=8615 KiB (+8615 KiB), count=101557 (+101557), average=87 B
+2025-04-30 15:12:42,148 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=5859 KiB (+5859 KiB), count=250002 (+250002), average=24 B
+2025-04-30 15:13:16,613 - INFO - Evaluation: average reward over 3 games: 2.33
+2025-04-30 15:13:16,614 - INFO - Iteration 250000, Eval average reward: 2.33, Replay size: 100000, Epsilon: 0.752, LR: 0.000100
+2025-04-30 15:13:17,022 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_250000.pt
+2025-04-30 15:13:17,029 - INFO - Model saved to output/models/dqn_model_atari_250000.pt
+2025-04-30 15:13:17,962 - INFO - Training curves at iteration 250000 saved.
+2025-04-30 15:13:17,994 - INFO - Training history at iteration 250000 saved to output/history/training_history_iter_250000.npz
+2025-04-30 15:16:29,326 - INFO - Iteration 260000: Target network updated
+2025-04-30 15:16:29,326 - INFO - Iteration 260000 Memory usage: 7281.04 MB
+2025-04-30 15:16:29,327 - INFO - Iteration 260000, Buffer size: 100000, Epsilon: 0.743
+2025-04-30 15:19:39,385 - INFO - Iteration 270000: Target network updated
+2025-04-30 15:19:39,386 - INFO - Iteration 270000 Memory usage: 7178.10 MB
+2025-04-30 15:19:39,386 - INFO - Iteration 270000, Buffer size: 100000, Epsilon: 0.733
+2025-04-30 15:22:53,302 - INFO - Iteration 280000: Target network updated
+2025-04-30 15:22:53,304 - INFO - Iteration 280000 Memory usage: 7179.20 MB
+2025-04-30 15:22:53,304 - INFO - Iteration 280000, Buffer size: 100000, Epsilon: 0.723
+2025-04-30 15:26:04,553 - INFO - Iteration 290000: Target network updated
+2025-04-30 15:26:04,554 - INFO - Iteration 290000 Memory usage: 7180.21 MB
+2025-04-30 15:26:04,554 - INFO - Iteration 290000, Buffer size: 100000, Epsilon: 0.713
+2025-04-30 15:29:14,902 - INFO - Iteration 300000: Target network updated
+2025-04-30 15:29:14,903 - INFO - Iteration 300000 Memory usage: 7181.20 MB
+2025-04-30 15:29:14,903 - INFO - Iteration 300000, Buffer size: 100000, Epsilon: 0.703
+2025-04-30 15:29:17,624 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 15:29:17,624 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 15:29:17,625 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 15:29:17,625 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 15:29:17,625 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:394: size=8615 KiB (+8615 KiB), count=101557 (+101557), average=87 B
+2025-04-30 15:29:17,626 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=7031 KiB (+7031 KiB), count=300002 (+300002), average=24 B
+2025-04-30 15:29:53,521 - INFO - Evaluation: average reward over 3 games: 7.33
+2025-04-30 15:29:53,522 - INFO - Iteration 300000, Eval average reward: 7.33, Replay size: 100000, Epsilon: 0.703, LR: 0.000100
+2025-04-30 15:29:53,986 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_300000.pt
+2025-04-30 15:29:53,995 - INFO - Model saved to output/models/dqn_model_atari_300000.pt
+2025-04-30 15:29:54,981 - INFO - Training curves at iteration 300000 saved.
+2025-04-30 15:29:55,015 - INFO - Training history at iteration 300000 saved to output/history/training_history_iter_300000.npz
+2025-04-30 15:33:09,548 - INFO - Iteration 310000: Target network updated
+2025-04-30 15:33:09,548 - INFO - Iteration 310000 Memory usage: 7323.43 MB
+2025-04-30 15:33:09,549 - INFO - Iteration 310000, Buffer size: 100000, Epsilon: 0.693
+2025-04-30 15:36:24,687 - INFO - Iteration 320000: Target network updated
+2025-04-30 15:36:24,688 - INFO - Iteration 320000 Memory usage: 7211.57 MB
+2025-04-30 15:36:24,688 - INFO - Iteration 320000, Buffer size: 100000, Epsilon: 0.683
+2025-04-30 15:39:38,898 - INFO - Iteration 330000: Target network updated
+2025-04-30 15:39:38,899 - INFO - Iteration 330000 Memory usage: 7212.81 MB
+2025-04-30 15:39:38,899 - INFO - Iteration 330000, Buffer size: 100000, Epsilon: 0.673
+2025-04-30 15:42:49,302 - INFO - Iteration 340000: Target network updated
+2025-04-30 15:42:49,302 - INFO - Iteration 340000 Memory usage: 7213.93 MB
+2025-04-30 15:42:49,303 - INFO - Iteration 340000, Buffer size: 100000, Epsilon: 0.663
+2025-04-30 15:46:00,776 - INFO - Iteration 350000: Target network updated
+2025-04-30 15:46:00,776 - INFO - Iteration 350000 Memory usage: 7215.16 MB
+2025-04-30 15:46:00,776 - INFO - Iteration 350000, Buffer size: 100000, Epsilon: 0.653
+2025-04-30 15:46:03,656 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 15:46:03,657 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 15:46:03,657 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 15:46:03,657 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 15:46:03,657 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:394: size=8615 KiB (+8615 KiB), count=101557 (+101557), average=87 B
+2025-04-30 15:46:03,658 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=8203 KiB (+8203 KiB), count=350002 (+350002), average=24 B
+2025-04-30 15:46:06,327 - INFO - Evaluation: average reward over 3 games: 14.67
+2025-04-30 15:46:06,328 - INFO - Iteration 350000, Eval average reward: 14.67, Replay size: 100000, Epsilon: 0.653, LR: 0.000100
+2025-04-30 15:46:06,854 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_350000.pt
+2025-04-30 15:46:06,861 - INFO - Model saved to output/models/dqn_model_atari_350000.pt
+2025-04-30 15:46:07,891 - INFO - Training curves at iteration 350000 saved.
+2025-04-30 15:46:07,935 - INFO - Training history at iteration 350000 saved to output/history/training_history_iter_350000.npz
+2025-04-30 15:49:21,520 - INFO - Iteration 360000: Target network updated
+2025-04-30 15:49:21,521 - INFO - Iteration 360000 Memory usage: 7365.38 MB
+2025-04-30 15:49:21,521 - INFO - Iteration 360000, Buffer size: 100000, Epsilon: 0.644
+2025-04-30 15:52:33,379 - INFO - Iteration 370000: Target network updated
+2025-04-30 15:52:33,381 - INFO - Iteration 370000 Memory usage: 7244.04 MB
+2025-04-30 15:52:33,382 - INFO - Iteration 370000, Buffer size: 100000, Epsilon: 0.634
+2025-04-30 15:55:46,685 - INFO - Iteration 380000: Target network updated
+2025-04-30 15:55:46,685 - INFO - Iteration 380000 Memory usage: 7245.27 MB
+2025-04-30 15:55:46,686 - INFO - Iteration 380000, Buffer size: 100000, Epsilon: 0.624
+2025-04-30 15:59:00,000 - INFO - Iteration 390000: Target network updated
+2025-04-30 15:59:00,000 - INFO - Iteration 390000 Memory usage: 7246.41 MB
+2025-04-30 15:59:00,001 - INFO - Iteration 390000, Buffer size: 100000, Epsilon: 0.614
+2025-04-30 16:02:12,029 - INFO - Iteration 400000: Target network updated
+2025-04-30 16:02:12,029 - INFO - Iteration 400000 Memory usage: 7247.64 MB
+2025-04-30 16:02:12,030 - INFO - Iteration 400000, Buffer size: 100000, Epsilon: 0.604
+2025-04-30 16:02:15,059 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 16:02:15,060 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:02:15,060 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:02:15,060 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 16:02:15,060 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=9375 KiB (+9375 KiB), count=400002 (+400002), average=24 B
+2025-04-30 16:02:15,060 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=9375 KiB (+9375 KiB), count=400001 (+400001), average=24 B
+2025-04-30 16:02:18,540 - INFO - Evaluation: average reward over 3 games: 31.33
+2025-04-30 16:02:18,540 - INFO - Iteration 400000, Eval average reward: 31.33, Replay size: 100000, Epsilon: 0.604, LR: 0.000100
+2025-04-30 16:02:19,117 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_400000.pt
+2025-04-30 16:02:19,125 - INFO - Model saved to output/models/dqn_model_atari_400000.pt
+2025-04-30 16:02:20,160 - INFO - Training curves at iteration 400000 saved.
+2025-04-30 16:02:20,219 - INFO - Training history at iteration 400000 saved to output/history/training_history_iter_400000.npz
+2025-04-30 16:05:38,217 - INFO - Iteration 410000: Target network updated
+2025-04-30 16:05:38,217 - INFO - Iteration 410000 Memory usage: 7402.78 MB
+2025-04-30 16:05:38,218 - INFO - Iteration 410000, Buffer size: 100000, Epsilon: 0.594
+2025-04-30 16:08:51,276 - INFO - Iteration 420000: Target network updated
+2025-04-30 16:08:51,277 - INFO - Iteration 420000 Memory usage: 7275.81 MB
+2025-04-30 16:08:51,277 - INFO - Iteration 420000, Buffer size: 100000, Epsilon: 0.584
+2025-04-30 16:12:05,470 - INFO - Iteration 430000: Target network updated
+2025-04-30 16:12:05,471 - INFO - Iteration 430000 Memory usage: 7276.89 MB
+2025-04-30 16:12:05,471 - INFO - Iteration 430000, Buffer size: 100000, Epsilon: 0.574
+2025-04-30 16:15:18,574 - INFO - Iteration 440000: Target network updated
+2025-04-30 16:15:18,574 - INFO - Iteration 440000 Memory usage: 7278.12 MB
+2025-04-30 16:15:18,574 - INFO - Iteration 440000, Buffer size: 100000, Epsilon: 0.564
+2025-04-30 16:18:32,129 - INFO - Iteration 450000: Target network updated
+2025-04-30 16:18:32,130 - INFO - Iteration 450000 Memory usage: 7279.37 MB
+2025-04-30 16:18:32,130 - INFO - Iteration 450000, Buffer size: 100000, Epsilon: 0.554
+2025-04-30 16:18:35,347 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 16:18:35,347 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:18:35,348 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:18:35,348 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 16:18:35,348 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=10.3 MiB (+10.3 MiB), count=450002 (+450002), average=24 B
+2025-04-30 16:18:35,349 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=10.3 MiB (+10.3 MiB), count=450001 (+450001), average=24 B
+2025-04-30 16:18:39,839 - INFO - Evaluation: average reward over 3 games: 37.67
+2025-04-30 16:18:39,839 - INFO - Iteration 450000, Eval average reward: 37.67, Replay size: 100000, Epsilon: 0.554, LR: 0.000100
+2025-04-30 16:18:40,485 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_450000.pt
+2025-04-30 16:18:40,493 - INFO - Model saved to output/models/dqn_model_atari_450000.pt
+2025-04-30 16:18:41,467 - INFO - Training curves at iteration 450000 saved.
+2025-04-30 16:18:41,515 - INFO - Training history at iteration 450000 saved to output/history/training_history_iter_450000.npz
+2025-04-30 16:21:56,238 - INFO - Iteration 460000: Target network updated
+2025-04-30 16:21:56,239 - INFO - Iteration 460000 Memory usage: 7444.05 MB
+2025-04-30 16:21:56,239 - INFO - Iteration 460000, Buffer size: 100000, Epsilon: 0.545
+2025-04-30 16:25:08,090 - INFO - Iteration 470000: Target network updated
+2025-04-30 16:25:08,091 - INFO - Iteration 470000 Memory usage: 7308.12 MB
+2025-04-30 16:25:08,091 - INFO - Iteration 470000, Buffer size: 100000, Epsilon: 0.535
+2025-04-30 16:28:20,399 - INFO - Iteration 480000: Target network updated
+2025-04-30 16:28:20,399 - INFO - Iteration 480000 Memory usage: 7309.55 MB
+2025-04-30 16:28:20,399 - INFO - Iteration 480000, Buffer size: 100000, Epsilon: 0.525
+2025-04-30 16:31:33,676 - INFO - Iteration 490000: Target network updated
+2025-04-30 16:31:33,677 - INFO - Iteration 490000 Memory usage: 7310.70 MB
+2025-04-30 16:31:33,677 - INFO - Iteration 490000, Buffer size: 100000, Epsilon: 0.515
+2025-04-30 16:34:45,976 - INFO - Iteration 500000: Target network updated
+2025-04-30 16:34:45,976 - INFO - Iteration 500000 Memory usage: 7311.88 MB
+2025-04-30 16:34:45,976 - INFO - Iteration 500000, Buffer size: 100000, Epsilon: 0.505
+2025-04-30 16:34:49,333 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 16:34:49,333 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:34:49,334 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:34:49,334 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 16:34:49,335 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=11.4 MiB (+11.4 MiB), count=500002 (+500002), average=24 B
+2025-04-30 16:34:49,335 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=11.4 MiB (+11.4 MiB), count=500001 (+500001), average=24 B
+2025-04-30 16:35:04,089 - INFO - Evaluation: average reward over 3 games: 38.00
+2025-04-30 16:35:04,090 - INFO - Iteration 500000, Eval average reward: 38.00, Replay size: 100000, Epsilon: 0.505, LR: 0.000100
+2025-04-30 16:35:04,775 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_500000.pt
+2025-04-30 16:35:04,783 - INFO - Model saved to output/models/dqn_model_atari_500000.pt
+2025-04-30 16:35:05,795 - INFO - Training curves at iteration 500000 saved.
+2025-04-30 16:35:05,846 - INFO - Training history at iteration 500000 saved to output/history/training_history_iter_500000.npz
+2025-04-30 16:38:20,663 - INFO - Iteration 510000: Target network updated
+2025-04-30 16:38:20,663 - INFO - Iteration 510000 Memory usage: 7487.10 MB
+2025-04-30 16:38:20,663 - INFO - Iteration 510000, Buffer size: 100000, Epsilon: 0.495
+2025-04-30 16:41:35,156 - INFO - Iteration 520000: Target network updated
+2025-04-30 16:41:35,157 - INFO - Iteration 520000 Memory usage: 7342.09 MB
+2025-04-30 16:41:35,157 - INFO - Iteration 520000, Buffer size: 100000, Epsilon: 0.485
+2025-04-30 16:44:48,121 - INFO - Iteration 530000: Target network updated
+2025-04-30 16:44:48,122 - INFO - Iteration 530000 Memory usage: 7343.33 MB
+2025-04-30 16:44:48,122 - INFO - Iteration 530000, Buffer size: 100000, Epsilon: 0.475
+2025-04-30 16:48:02,043 - INFO - Iteration 540000: Target network updated
+2025-04-30 16:48:02,043 - INFO - Iteration 540000 Memory usage: 7344.49 MB
+2025-04-30 16:48:02,043 - INFO - Iteration 540000, Buffer size: 100000, Epsilon: 0.465
+2025-04-30 16:51:15,692 - INFO - Iteration 550000: Target network updated
+2025-04-30 16:51:15,693 - INFO - Iteration 550000 Memory usage: 7345.73 MB
+2025-04-30 16:51:15,693 - INFO - Iteration 550000, Buffer size: 100000, Epsilon: 0.456
+2025-04-30 16:51:19,248 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 16:51:19,249 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:51:19,249 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 16:51:19,249 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 16:51:19,249 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=12.6 MiB (+12.6 MiB), count=550002 (+550002), average=24 B
+2025-04-30 16:51:19,249 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=12.6 MiB (+12.6 MiB), count=550001 (+550001), average=24 B
+2025-04-30 16:51:23,562 - INFO - Evaluation: average reward over 3 games: 39.33
+2025-04-30 16:51:23,562 - INFO - Iteration 550000, Eval average reward: 39.33, Replay size: 100000, Epsilon: 0.456, LR: 0.000100
+2025-04-30 16:51:24,355 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_550000.pt
+2025-04-30 16:51:24,363 - INFO - Model saved to output/models/dqn_model_atari_550000.pt
+2025-04-30 16:51:25,374 - INFO - Training curves at iteration 550000 saved.
+2025-04-30 16:51:25,443 - INFO - Training history at iteration 550000 saved to output/history/training_history_iter_550000.npz
+2025-04-30 16:54:39,711 - INFO - Iteration 560000: Target network updated
+2025-04-30 16:54:39,712 - INFO - Iteration 560000 Memory usage: 7528.31 MB
+2025-04-30 16:54:39,712 - INFO - Iteration 560000, Buffer size: 100000, Epsilon: 0.446
+2025-04-30 16:57:54,223 - INFO - Iteration 570000: Target network updated
+2025-04-30 16:57:54,224 - INFO - Iteration 570000 Memory usage: 7375.79 MB
+2025-04-30 16:57:54,224 - INFO - Iteration 570000, Buffer size: 100000, Epsilon: 0.436
+2025-04-30 17:01:05,611 - INFO - Iteration 580000: Target network updated
+2025-04-30 17:01:05,612 - INFO - Iteration 580000 Memory usage: 7376.87 MB
+2025-04-30 17:01:05,612 - INFO - Iteration 580000, Buffer size: 100000, Epsilon: 0.426
+2025-04-30 17:04:17,499 - INFO - Iteration 590000: Target network updated
+2025-04-30 17:04:17,499 - INFO - Iteration 590000 Memory usage: 7378.04 MB
+2025-04-30 17:04:17,500 - INFO - Iteration 590000, Buffer size: 100000, Epsilon: 0.416
+2025-04-30 17:07:30,754 - INFO - Iteration 600000: Target network updated
+2025-04-30 17:07:30,754 - INFO - Iteration 600000 Memory usage: 7379.20 MB
+2025-04-30 17:07:30,755 - INFO - Iteration 600000, Buffer size: 100000, Epsilon: 0.406
+2025-04-30 17:07:34,466 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 17:07:34,467 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:07:34,467 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:07:34,467 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 17:07:34,468 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=13.7 MiB (+13.7 MiB), count=600002 (+600002), average=24 B
+2025-04-30 17:07:34,468 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=13.7 MiB (+13.7 MiB), count=600001 (+600001), average=24 B
+2025-04-30 17:07:38,348 - INFO - Evaluation: average reward over 3 games: 32.00
+2025-04-30 17:07:38,348 - INFO - Iteration 600000, Eval average reward: 32.00, Replay size: 100000, Epsilon: 0.406, LR: 0.000100
+2025-04-30 17:07:39,201 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_600000.pt
+2025-04-30 17:07:39,209 - INFO - Model saved to output/models/dqn_model_atari_600000.pt
+2025-04-30 17:07:40,255 - INFO - Training curves at iteration 600000 saved.
+2025-04-30 17:07:40,328 - INFO - Training history at iteration 600000 saved to output/history/training_history_iter_600000.npz
+2025-04-30 17:10:54,421 - INFO - Iteration 610000: Target network updated
+2025-04-30 17:10:54,421 - INFO - Iteration 610000 Memory usage: 7572.00 MB
+2025-04-30 17:10:54,422 - INFO - Iteration 610000, Buffer size: 100000, Epsilon: 0.396
+2025-04-30 17:14:08,497 - INFO - Iteration 620000: Target network updated
+2025-04-30 17:14:08,497 - INFO - Iteration 620000 Memory usage: 7408.84 MB
+2025-04-30 17:14:08,498 - INFO - Iteration 620000, Buffer size: 100000, Epsilon: 0.386
+2025-04-30 17:17:22,030 - INFO - Iteration 630000: Target network updated
+2025-04-30 17:17:22,030 - INFO - Iteration 630000 Memory usage: 7409.97 MB
+2025-04-30 17:17:22,030 - INFO - Iteration 630000, Buffer size: 100000, Epsilon: 0.376
+2025-04-30 17:20:35,127 - INFO - Iteration 640000: Target network updated
+2025-04-30 17:20:35,128 - INFO - Iteration 640000 Memory usage: 7411.09 MB
+2025-04-30 17:20:35,128 - INFO - Iteration 640000, Buffer size: 100000, Epsilon: 0.366
+2025-04-30 17:23:47,372 - INFO - Iteration 650000: Target network updated
+2025-04-30 17:23:47,372 - INFO - Iteration 650000 Memory usage: 7412.31 MB
+2025-04-30 17:23:47,373 - INFO - Iteration 650000, Buffer size: 100000, Epsilon: 0.357
+2025-04-30 17:23:51,143 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 17:23:51,144 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:23:51,144 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:23:51,144 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 17:23:51,144 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=14.9 MiB (+14.9 MiB), count=650002 (+650002), average=24 B
+2025-04-30 17:23:51,144 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=14.9 MiB (+14.9 MiB), count=650001 (+650001), average=24 B
+2025-04-30 17:24:16,424 - INFO - Evaluation: average reward over 3 games: 40.33
+2025-04-30 17:24:16,425 - INFO - Iteration 650000, Eval average reward: 40.33, Replay size: 100000, Epsilon: 0.357, LR: 0.000100
+2025-04-30 17:24:17,272 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_650000.pt
+2025-04-30 17:24:17,280 - INFO - Model saved to output/models/dqn_model_atari_650000.pt
+2025-04-30 17:24:18,343 - INFO - Training curves at iteration 650000 saved.
+2025-04-30 17:24:18,428 - INFO - Training history at iteration 650000 saved to output/history/training_history_iter_650000.npz
+2025-04-30 17:27:34,001 - INFO - Iteration 660000: Target network updated
+2025-04-30 17:27:34,001 - INFO - Iteration 660000 Memory usage: 7617.09 MB
+2025-04-30 17:27:34,002 - INFO - Iteration 660000, Buffer size: 100000, Epsilon: 0.347
+2025-04-30 17:30:47,010 - INFO - Iteration 670000: Target network updated
+2025-04-30 17:30:47,011 - INFO - Iteration 670000 Memory usage: 7442.43 MB
+2025-04-30 17:30:47,011 - INFO - Iteration 670000, Buffer size: 100000, Epsilon: 0.337
+2025-04-30 17:34:01,247 - INFO - Iteration 680000: Target network updated
+2025-04-30 17:34:01,248 - INFO - Iteration 680000 Memory usage: 7443.49 MB
+2025-04-30 17:34:01,248 - INFO - Iteration 680000, Buffer size: 100000, Epsilon: 0.327
+2025-04-30 17:37:14,564 - INFO - Iteration 690000: Target network updated
+2025-04-30 17:37:14,565 - INFO - Iteration 690000 Memory usage: 7444.60 MB
+2025-04-30 17:37:14,565 - INFO - Iteration 690000, Buffer size: 100000, Epsilon: 0.317
+2025-04-30 17:40:27,219 - INFO - Iteration 700000: Target network updated
+2025-04-30 17:40:27,220 - INFO - Iteration 700000 Memory usage: 7445.86 MB
+2025-04-30 17:40:27,220 - INFO - Iteration 700000, Buffer size: 100000, Epsilon: 0.307
+2025-04-30 17:40:31,149 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 17:40:31,150 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:40:31,150 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:40:31,151 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 17:40:31,151 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=16.0 MiB (+16.0 MiB), count=700002 (+700002), average=24 B
+2025-04-30 17:40:31,151 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=16.0 MiB (+16.0 MiB), count=700001 (+700001), average=24 B
+2025-04-30 17:40:56,921 - INFO - Evaluation: average reward over 3 games: 30.67
+2025-04-30 17:40:56,922 - INFO - Iteration 700000, Eval average reward: 30.67, Replay size: 100000, Epsilon: 0.307, LR: 0.000100
+2025-04-30 17:40:57,845 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_700000.pt
+2025-04-30 17:40:57,854 - INFO - Model saved to output/models/dqn_model_atari_700000.pt
+2025-04-30 17:40:58,951 - INFO - Training curves at iteration 700000 saved.
+2025-04-30 17:40:59,025 - INFO - Training history at iteration 700000 saved to output/history/training_history_iter_700000.npz
+2025-04-30 17:44:15,658 - INFO - Iteration 710000: Target network updated
+2025-04-30 17:44:15,659 - INFO - Iteration 710000 Memory usage: 7657.20 MB
+2025-04-30 17:44:15,659 - INFO - Iteration 710000, Buffer size: 100000, Epsilon: 0.297
+2025-04-30 17:47:29,833 - INFO - Iteration 720000: Target network updated
+2025-04-30 17:47:29,834 - INFO - Iteration 720000 Memory usage: 7475.02 MB
+2025-04-30 17:47:29,834 - INFO - Iteration 720000, Buffer size: 100000, Epsilon: 0.287
+2025-04-30 17:50:42,048 - INFO - Iteration 730000: Target network updated
+2025-04-30 17:50:42,048 - INFO - Iteration 730000 Memory usage: 7475.99 MB
+2025-04-30 17:50:42,049 - INFO - Iteration 730000, Buffer size: 100000, Epsilon: 0.277
+2025-04-30 17:53:55,550 - INFO - Iteration 740000: Target network updated
+2025-04-30 17:53:55,550 - INFO - Iteration 740000 Memory usage: 7477.11 MB
+2025-04-30 17:53:55,550 - INFO - Iteration 740000, Buffer size: 100000, Epsilon: 0.267
+2025-04-30 17:57:08,538 - INFO - Iteration 750000: Target network updated
+2025-04-30 17:57:08,539 - INFO - Iteration 750000 Memory usage: 7478.29 MB
+2025-04-30 17:57:08,539 - INFO - Iteration 750000, Buffer size: 100000, Epsilon: 0.258
+2025-04-30 17:57:12,762 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 17:57:12,763 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:57:12,763 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 17:57:12,763 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 17:57:12,763 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=17.2 MiB (+17.2 MiB), count=750002 (+750002), average=24 B
+2025-04-30 17:57:12,763 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=17.2 MiB (+17.2 MiB), count=750001 (+750001), average=24 B
+2025-04-30 17:57:17,690 - INFO - Evaluation: average reward over 3 games: 53.67
+2025-04-30 17:57:17,691 - INFO - Iteration 750000, Eval average reward: 53.67, Replay size: 100000, Epsilon: 0.258, LR: 0.000100
+2025-04-30 17:57:18,685 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_750000.pt
+2025-04-30 17:57:18,693 - INFO - Model saved to output/models/dqn_model_atari_750000.pt
+2025-04-30 17:57:19,801 - INFO - Training curves at iteration 750000 saved.
+2025-04-30 17:57:19,883 - INFO - Training history at iteration 750000 saved to output/history/training_history_iter_750000.npz
+2025-04-30 18:00:33,375 - INFO - Iteration 760000: Target network updated
+2025-04-30 18:00:33,375 - INFO - Iteration 760000 Memory usage: 7700.89 MB
+2025-04-30 18:00:33,376 - INFO - Iteration 760000, Buffer size: 100000, Epsilon: 0.248
+2025-04-30 18:03:45,045 - INFO - Iteration 770000: Target network updated
+2025-04-30 18:03:45,046 - INFO - Iteration 770000 Memory usage: 7508.27 MB
+2025-04-30 18:03:45,047 - INFO - Iteration 770000, Buffer size: 100000, Epsilon: 0.238
+2025-04-30 18:06:56,149 - INFO - Iteration 780000: Target network updated
+2025-04-30 18:06:56,150 - INFO - Iteration 780000 Memory usage: 7509.21 MB
+2025-04-30 18:06:56,150 - INFO - Iteration 780000, Buffer size: 100000, Epsilon: 0.228
+2025-04-30 18:10:07,967 - INFO - Iteration 790000: Target network updated
+2025-04-30 18:10:07,968 - INFO - Iteration 790000 Memory usage: 7510.33 MB
+2025-04-30 18:10:07,968 - INFO - Iteration 790000, Buffer size: 100000, Epsilon: 0.218
+2025-04-30 18:13:23,167 - INFO - Iteration 800000: Target network updated
+2025-04-30 18:13:23,167 - INFO - Iteration 800000 Memory usage: 7511.64 MB
+2025-04-30 18:13:23,167 - INFO - Iteration 800000, Buffer size: 100000, Epsilon: 0.208
+2025-04-30 18:13:27,484 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 18:13:27,485 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 18:13:27,485 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 18:13:27,485 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 18:13:27,486 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=18.3 MiB (+18.3 MiB), count=800002 (+800002), average=24 B
+2025-04-30 18:13:27,486 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=18.3 MiB (+18.3 MiB), count=800001 (+800001), average=24 B
+2025-04-30 18:13:33,329 - INFO - Evaluation: average reward over 3 games: 63.00
+2025-04-30 18:13:33,329 - INFO - Iteration 800000, Eval average reward: 63.00, Replay size: 100000, Epsilon: 0.208, LR: 0.000100
+2025-04-30 18:13:34,349 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_800000.pt
+2025-04-30 18:13:34,358 - INFO - Model saved to output/models/dqn_model_atari_800000.pt
+2025-04-30 18:13:35,542 - INFO - Training curves at iteration 800000 saved.
+2025-04-30 18:13:35,630 - INFO - Training history at iteration 800000 saved to output/history/training_history_iter_800000.npz
+2025-04-30 18:16:49,316 - INFO - Iteration 810000: Target network updated
+2025-04-30 18:16:49,317 - INFO - Iteration 810000 Memory usage: 7744.01 MB
+2025-04-30 18:16:49,317 - INFO - Iteration 810000, Buffer size: 100000, Epsilon: 0.198
+2025-04-30 18:20:01,945 - INFO - Iteration 820000: Target network updated
+2025-04-30 18:20:01,946 - INFO - Iteration 820000 Memory usage: 7541.89 MB
+2025-04-30 18:20:01,946 - INFO - Iteration 820000, Buffer size: 100000, Epsilon: 0.188
+2025-04-30 18:23:15,899 - INFO - Iteration 830000: Target network updated
+2025-04-30 18:23:15,899 - INFO - Iteration 830000 Memory usage: 7542.83 MB
+2025-04-30 18:23:15,899 - INFO - Iteration 830000, Buffer size: 100000, Epsilon: 0.178
+2025-04-30 18:26:29,097 - INFO - Iteration 840000: Target network updated
+2025-04-30 18:26:29,098 - INFO - Iteration 840000 Memory usage: 7544.05 MB
+2025-04-30 18:26:29,098 - INFO - Iteration 840000, Buffer size: 100000, Epsilon: 0.168
+2025-04-30 18:29:43,538 - INFO - Iteration 850000: Target network updated
+2025-04-30 18:29:43,539 - INFO - Iteration 850000 Memory usage: 7545.23 MB
+2025-04-30 18:29:43,539 - INFO - Iteration 850000, Buffer size: 100000, Epsilon: 0.158
+2025-04-30 18:29:48,040 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 18:29:48,041 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 18:29:48,041 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 18:29:48,042 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 18:29:48,042 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=19.5 MiB (+19.5 MiB), count=850002 (+850002), average=24 B
+2025-04-30 18:29:48,042 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=19.5 MiB (+19.5 MiB), count=850001 (+850001), average=24 B
+2025-04-30 18:30:13,549 - INFO - Evaluation: average reward over 3 games: 26.67
+2025-04-30 18:30:13,549 - INFO - Iteration 850000, Eval average reward: 26.67, Replay size: 100000, Epsilon: 0.158, LR: 0.000100
+2025-04-30 18:30:14,627 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_850000.pt
+2025-04-30 18:30:14,636 - INFO - Model saved to output/models/dqn_model_atari_850000.pt
+2025-04-30 18:30:15,739 - INFO - Training curves at iteration 850000 saved.
+2025-04-30 18:30:15,819 - INFO - Training history at iteration 850000 saved to output/history/training_history_iter_850000.npz
+2025-04-30 18:33:27,614 - INFO - Iteration 860000: Target network updated
+2025-04-30 18:33:27,615 - INFO - Iteration 860000 Memory usage: 7786.42 MB
+2025-04-30 18:33:27,615 - INFO - Iteration 860000, Buffer size: 100000, Epsilon: 0.149
+2025-04-30 18:36:38,663 - INFO - Iteration 870000: Target network updated
+2025-04-30 18:36:38,663 - INFO - Iteration 870000 Memory usage: 7574.90 MB
+2025-04-30 18:36:38,663 - INFO - Iteration 870000, Buffer size: 100000, Epsilon: 0.139
+2025-04-30 18:39:50,854 - INFO - Iteration 880000: Target network updated
+2025-04-30 18:39:50,854 - INFO - Iteration 880000 Memory usage: 7576.04 MB
+2025-04-30 18:39:50,854 - INFO - Iteration 880000, Buffer size: 100000, Epsilon: 0.129
+2025-04-30 18:43:03,510 - INFO - Iteration 890000: Target network updated
+2025-04-30 18:43:03,511 - INFO - Iteration 890000 Memory usage: 7577.20 MB
+2025-04-30 18:43:03,511 - INFO - Iteration 890000, Buffer size: 100000, Epsilon: 0.119
+2025-04-30 18:46:14,320 - INFO - Iteration 900000: Target network updated
+2025-04-30 18:46:14,320 - INFO - Iteration 900000 Memory usage: 7578.35 MB
+2025-04-30 18:46:14,321 - INFO - Iteration 900000, Buffer size: 100000, Epsilon: 0.109
+2025-04-30 18:46:18,922 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 18:46:18,923 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 18:46:18,923 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 18:46:18,924 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 18:46:18,924 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=20.6 MiB (+20.6 MiB), count=900002 (+900002), average=24 B
+2025-04-30 18:46:18,925 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=20.6 MiB (+20.6 MiB), count=900001 (+900001), average=24 B
+2025-04-30 18:46:24,421 - INFO - Evaluation: average reward over 3 games: 64.00
+2025-04-30 18:46:24,422 - INFO - Iteration 900000, Eval average reward: 64.00, Replay size: 100000, Epsilon: 0.109, LR: 0.000100
+2025-04-30 18:46:25,568 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_900000.pt
+2025-04-30 18:46:25,576 - INFO - Model saved to output/models/dqn_model_atari_900000.pt
+2025-04-30 18:46:26,677 - INFO - Training curves at iteration 900000 saved.
+2025-04-30 18:46:26,766 - INFO - Training history at iteration 900000 saved to output/history/training_history_iter_900000.npz
+2025-04-30 18:49:39,433 - INFO - Iteration 910000: Target network updated
+2025-04-30 18:49:39,434 - INFO - Iteration 910000 Memory usage: 7827.04 MB
+2025-04-30 18:49:39,434 - INFO - Iteration 910000, Buffer size: 100000, Epsilon: 0.099
+2025-04-30 18:52:51,742 - INFO - Iteration 920000: Target network updated
+2025-04-30 18:52:51,743 - INFO - Iteration 920000 Memory usage: 7607.86 MB
+2025-04-30 18:52:51,743 - INFO - Iteration 920000, Buffer size: 100000, Epsilon: 0.089
+2025-04-30 18:56:04,265 - INFO - Iteration 930000: Target network updated
+2025-04-30 18:56:04,266 - INFO - Iteration 930000 Memory usage: 7609.04 MB
+2025-04-30 18:56:04,266 - INFO - Iteration 930000, Buffer size: 100000, Epsilon: 0.079
+2025-04-30 18:59:17,417 - INFO - Iteration 940000: Target network updated
+2025-04-30 18:59:17,418 - INFO - Iteration 940000 Memory usage: 7610.27 MB
+2025-04-30 18:59:17,418 - INFO - Iteration 940000, Buffer size: 100000, Epsilon: 0.069
+2025-04-30 19:02:30,420 - INFO - Iteration 950000: Target network updated
+2025-04-30 19:02:30,421 - INFO - Iteration 950000 Memory usage: 7611.39 MB
+2025-04-30 19:02:30,421 - INFO - Iteration 950000, Buffer size: 100000, Epsilon: 0.059
+2025-04-30 19:02:35,300 - INFO - [ Top 5 memory usage differences ]
+2025-04-30 19:02:35,300 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:392: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 19:02:35,301 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:390: size=2701 MiB (+2701 MiB), count=200000 (+200000), average=13.8 KiB
+2025-04-30 19:02:35,301 - INFO - <frozen importlib._bootstrap_external>:647: size=34.1 MiB (+34.1 MiB), count=264173 (+264173), average=136 B
+2025-04-30 19:02:35,301 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:550: size=21.7 MiB (+21.7 MiB), count=950002 (+950002), average=24 B
+2025-04-30 19:02:35,302 - INFO - C:\Users\jeffl\OneDrive\AllCourses\03_ReinforcementLearning\Reinforcement_Learning\rl_brick_game\src\3_dqn_5M.py:714: size=21.7 MiB (+21.7 MiB), count=950001 (+950001), average=24 B
+2025-04-30 19:02:51,018 - INFO - Evaluation: average reward over 3 games: 47.00
+2025-04-30 19:02:51,019 - INFO - Iteration 950000, Eval average reward: 47.00, Replay size: 100000, Epsilon: 0.059, LR: 0.000100
+2025-04-30 19:02:52,206 - INFO - Checkpoint saved to output/checkpoints/dqn_checkpoint_950000.pt
+2025-04-30 19:02:52,214 - INFO - Model saved to output/models/dqn_model_atari_950000.pt
+2025-04-30 19:02:53,299 - INFO - Training curves at iteration 950000 saved.
+2025-04-30 19:02:53,402 - INFO - Training history at iteration 950000 saved to output/history/training_history_iter_950000.npz
+2025-04-30 19:06:06,546 - INFO - Iteration 960000: Target network updated
+2025-04-30 19:06:06,547 - INFO - Iteration 960000 Memory usage: 7923.61 MB
+2025-04-30 19:06:06,547 - INFO - Iteration 960000, Buffer size: 100000, Epsilon: 0.050
+2025-04-30 19:09:19,930 - INFO - Iteration 970000: Target network updated
+2025-04-30 19:09:19,930 - INFO - Iteration 970000 Memory usage: 7704.36 MB
+2025-04-30 19:09:19,931 - INFO - Iteration 970000, Buffer size: 100000, Epsilon: 0.040
+2025-04-30 19:12:29,074 - INFO - Iteration 980000: Target network updated
+2025-04-30 19:12:29,075 - INFO - Iteration 980000 Memory usage: 7705.62 MB
+2025-04-30 19:12:29,075 - INFO - Iteration 980000, Buffer size: 100000, Epsilon: 0.030
+2025-04-30 19:15:38,643 - INFO - Iteration 990000: Target network updated
+2025-04-30 19:15:38,644 - INFO - Iteration 990000 Memory usage: 7706.71 MB
+2025-04-30 19:15:38,644 - INFO - Iteration 990000, Buffer size: 100000, Epsilon: 0.020
+2025-04-30 19:18:49,106 - INFO - Model saved to output/models/dqn_model_atari_final.pt
+2025-04-30 19:18:50,166 - INFO - Training curves at iteration final saved.
+2025-04-30 19:18:50,282 - INFO - Training history at iteration final saved to output/history/training_history_iter_final.npz
+2025-04-30 19:19:04,549 - INFO - Evaluation: average reward over 1 games: 19.00
+2025-04-30 19:19:35,255 - INFO - Final reward (one episode): 19.00
