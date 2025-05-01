@@ -16,7 +16,7 @@ import gymnasium as gym
 
 
 # 改进的模型路径查找
-def find_model_path(model_filename="model_3_1M.pt"):
+def find_model_path(model_filename="model_4_2M.pt"):
     # 1. 检查当前目录
     if os.path.exists(model_filename):
         return model_filename
