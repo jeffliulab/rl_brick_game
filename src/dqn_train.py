@@ -13,15 +13,20 @@ python src/dqn_train.py --resume [Checkpoint File Path] --iterations [Target Ite
 
 example:
 python .\src\dqn_train.py --resume .\src\dqn_checkpoint_1950000.pt --iterations 3000000
+
+5月3日: 2M开始, 训练到6M; Epsilon从0.05线性衰减到5M次时的0.005, 并在5M - 6M以0.005进行训练
 """
 
 # 全局训练设置
-EPSILON_FINAL_SETTING = 0.04  # 最终epsilon值
+EPSILON_START_SETTING = 0.05 # 最初/从断电处恢复训练时的起始epsilon
+EPSILON_FINAL_SETTING = 0.005  # 最终epsilon值
+DECAY_START_ITER = 2000000 # 从2000000次开始衰减
+DECAY_END_ITER = 5000000 # 从5000000次结束衰减
 
 # CHECKPOINT恢复设置
 CONTINUE_TRAINING = True
 CHECKPOINT = "./output/checkpoints/dqn_checkpoint_1950000.pt"
-TARGET_EPISODES = 3000000
+TARGET_EPISODES = 6000000
 
 import os
 import sys
@@ -361,7 +366,10 @@ def main():
             save_model_fn=save_model,
             save_training_plots_fn=save_training_plots,
             save_training_history_fn=save_training_history,
+            epsilon_start=EPSILON_START_SETTING,
             epsilon_final=EPSILON_FINAL_SETTING,
+            decay_start_iter=DECAY_START_ITER,
+            decay_end_iter=DECAY_END_ITER,
             total_iteration_times=TOTAL_ITERATION_TIMES,
             main_function=main,
             main_has_continue_called=main_has_continue_called
@@ -430,9 +438,9 @@ def main():
     target_update_freq = 10000
     
     # 线性衰减的epsilon参数
-    epsilon_start = 1.0
+    epsilon_start = EPSILON_START_SETTING
     epsilon_final = EPSILON_FINAL_SETTING
-    epsilon_decay_steps = 1000000  # 前100万步线性衰减
+    epsilon_decay_steps = DECAY_END_ITER
 
     eval_freq = 50000        # 每多少迭代做一次评估
     memory_check_freq = 5000  # 每多少迭代检查一次内存 (从10000改为5000，更频繁检查)
@@ -477,10 +485,15 @@ def main():
             continue
 
         # 线性衰减epsilon
-        if i < epsilon_decay_steps:
-            agent.epsilon = epsilon_start - (epsilon_start - epsilon_final) * (i / epsilon_decay_steps)
+        # 根据迭代次数决定epsilon值 
+        if i < DECAY_START_ITER:
+            agent.epsilon = EPSILON_START_SETTING
+        elif i < DECAY_END_ITER:
+            # 从2M到5M之间线性衰减
+            decay_progress = (i - DECAY_START_ITER) / (DECAY_END_ITER - DECAY_START_ITER)
+            agent.epsilon = EPSILON_START_SETTING - (EPSILON_START_SETTING - EPSILON_FINAL_SETTING) * decay_progress
         else:
-            agent.epsilon = epsilon_final
+            agent.epsilon = EPSILON_FINAL_SETTING
 
         # 隔一定迭代频率更新target_net
         if i % target_update_freq == 0:
@@ -630,7 +643,10 @@ def main_with_recovery():
                 save_model_fn=save_model,
                 save_training_plots_fn=save_training_plots,
                 save_training_history_fn=save_training_history,
+                epsilon_start=EPSILON_START_SETTING,
                 epsilon_final=EPSILON_FINAL_SETTING,
+                decay_start_iter=DECAY_START_ITER,
+                decay_end_iter=DECAY_END_ITER,
                 total_iteration_times=TOTAL_ITERATION_TIMES,
                 main_function=main,
                 main_has_continue_called=main_has_continue_called
@@ -676,7 +692,10 @@ def main_with_recovery():
                 save_model_fn=save_model,
                 save_training_plots_fn=save_training_plots,
                 save_training_history_fn=save_training_history,
+                epsilon_start=EPSILON_START_SETTING,
                 epsilon_final=args.epsilon,
+                decay_start_iter=DECAY_START_ITER,
+                decay_end_iter=DECAY_END_ITER,
                 total_iteration_times=TOTAL_ITERATION_TIMES,
                 main_function=main,
                 main_has_continue_called=main_has_continue_called

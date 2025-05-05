@@ -129,7 +129,7 @@ def load_checkpoint(checkpoint_path, map_location='cpu'):
     
 def resume_from_checkpoint(checkpoint_path, DQNAgent, initialize_environment, 
                           play_and_record, device, ReplayBufferClass, 
-                          logger=None, epsilon_final=0.05):
+                          logger=None, epsilon_final=None):
     """
     从检查点文件恢复训练状态，确保正确加载和初始化。
     
@@ -141,7 +141,7 @@ def resume_from_checkpoint(checkpoint_path, DQNAgent, initialize_environment,
         device: 训练设备 (CPU/GPU)
         ReplayBufferClass: 回放缓冲区类
         logger: 日志记录器
-        epsilon_final: 默认的最终epsilon值 (如果检查点中没有)
+        epsilon_final: 最终epsilon值
         
     Returns:
         恢复的训练状态元组，如果恢复失败则返回None
@@ -169,8 +169,8 @@ def resume_from_checkpoint(checkpoint_path, DQNAgent, initialize_environment,
     n_actions = env.action_space.n
     state_shape = env.observation_space.shape
     
-    # 4) 初始化Agent
-    agent = DQNAgent(state_shape, n_actions, epsilon=checkpoint.get('epsilon', epsilon_final))
+    # 4) 初始化Agent - 使用任意epsilon初始化，之后会重置
+    agent = DQNAgent(state_shape, n_actions, epsilon=1.0)
     
     # 加载处理过的权重
     agent.policy_net.load_state_dict(checkpoint['policy_net_state_dict'])
@@ -246,7 +246,9 @@ def continue_training_from_checkpoint(checkpoint_path, num_iterations,
                                      print_memory_usage, analyze_gpu_tensors,
                                      save_checkpoint_fn=None, save_model_fn=None,
                                      save_training_plots_fn=None, save_training_history_fn=None,
-                                     epsilon_final=0.05, total_iteration_times=2000000,
+                                     epsilon_start=None, epsilon_final=None,
+                                     decay_start_iter=None, decay_end_iter=None,
+                                     total_iteration_times=None,
                                      main_function=None, main_has_continue_called=False):
     """
     实际执行从检查点恢复训练的主函数，包含完整的训练循环
@@ -267,8 +269,11 @@ def continue_training_from_checkpoint(checkpoint_path, num_iterations,
         force_gc, print_memory_usage, analyze_gpu_tensors: 内存管理相关函数
         save_checkpoint_fn, save_model_fn, save_training_plots_fn, 
         save_training_history_fn: 保存相关函数
-        epsilon_final: 最终epsilon值
-        total_iteration_times: 默认总迭代次数
+        epsilon_start: 起始epsilon值，来自dqn_train.py的EPSILON_START_SETTING
+        epsilon_final: 最终epsilon值，来自dqn_train.py的EPSILON_FINAL_SETTING
+        decay_start_iter: 开始衰减的迭代次数，来自dqn_train.py的DECAY_START_ITER
+        decay_end_iter: 结束衰减的迭代次数，来自dqn_train.py的DECAY_END_ITER
+        total_iteration_times: 总迭代次数，来自dqn_train.py的TOTAL_ITERATION_TIMES
         main_function: 主训练函数，用于恢复失败时调用
         main_has_continue_called: 避免递归调用的标记变量
         
@@ -329,6 +334,11 @@ def continue_training_from_checkpoint(checkpoint_path, num_iterations,
         memory_usage = print_memory_usage("After checkpoint load", logger)
         analyze_gpu_tensors(logger)
         
+        # 强制设置新的epsilon值
+        if epsilon_start is not None:
+            agent.epsilon = epsilon_start
+            logger.info(f"Epsilon value explicitly overridden to {agent.epsilon}")
+        
     except Exception as e:
         logger.error(f"Failed to resume from checkpoint: {e}")
         import traceback
@@ -339,16 +349,33 @@ def continue_training_from_checkpoint(checkpoint_path, num_iterations,
         return
     
     # 设置迭代次数
-    if num_iterations is None:
+    if num_iterations is None and total_iteration_times is not None:
         num_iterations = total_iteration_times
+    elif num_iterations is None:
+        # 默认值，仅在没有提供任何参数时使用
+        num_iterations = 2000000
+    
+    # 确认超参数均已设置
+    if epsilon_start is None:
+        logger.warning("epsilon_start not provided, using a default value of 0.05")
+        epsilon_start = 0.05
+        
+    if epsilon_final is None:
+        logger.warning("epsilon_final not provided, using a default value of 0.005")
+        epsilon_final = 0.005
+        
+    if decay_start_iter is None:
+        logger.warning("decay_start_iter not provided, using a default value of 2000000")
+        decay_start_iter = 2000000
+        
+    if decay_end_iter is None:
+        logger.warning("decay_end_iter not provided, using a default value of 5000000")
+        decay_end_iter = 5000000
     
     # 超参数设定
     gamma = 0.99
     batch_size = 16  # 从32减小到16，减轻内存负担
     target_update_freq = 10000
-    
-    # 线性衰减的epsilon参数 - 从当前epsilon继续衰减
-    epsilon_decay_steps = 1000000  # 前100万步线性衰减
     
     eval_freq = 50000        # 每多少迭代做一次评估
     memory_check_freq = 5000  # 每多少迭代检查一次内存
@@ -365,6 +392,9 @@ def continue_training_from_checkpoint(checkpoint_path, num_iterations,
     MEMORY_CRITICAL_THRESHOLD = 85.0  # 85%就采取行动
     
     logger.info(f"Continuing DQN training from iteration {start_iteration}...")
+    logger.info(f"Using epsilon decay: start={epsilon_start}, final={epsilon_final}, " 
+               f"decay_start={decay_start_iter}, decay_end={decay_end_iter}")
+    
     for i in trange(start_iteration, num_iterations, desc="Resumed training"):
         # 检查并管理内存
         batch_size = check_and_manage_memory(
@@ -390,9 +420,13 @@ def continue_training_from_checkpoint(checkpoint_path, num_iterations,
             force_gc(logger)
             continue
         
-        # 线性衰减epsilon，但保持不低于设定的最终值
-        if i < epsilon_decay_steps:
-            agent.epsilon = max(agent.epsilon - (1.0 - epsilon_final) / epsilon_decay_steps, epsilon_final)
+        # 根据迭代次数决定epsilon值
+        if i < decay_start_iter:
+            agent.epsilon = epsilon_start
+        elif i < decay_end_iter:
+            # 从decay_start_iter到decay_end_iter之间线性衰减
+            decay_progress = (i - decay_start_iter) / (decay_end_iter - decay_start_iter)
+            agent.epsilon = epsilon_start - (epsilon_start - epsilon_final) * decay_progress
         else:
             agent.epsilon = epsilon_final
             
