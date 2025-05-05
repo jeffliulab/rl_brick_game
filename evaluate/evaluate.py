@@ -14,9 +14,14 @@ import time
 from collections import deque
 import gymnasium as gym
 
+EVALUATE_MODEL = "model_5_6M.pt" # 这个model是从2M断点恢复，2M-5M的epsilon从0.05线性递减到0.005，然后5M-6M以0.005训练的
+
+"""
+注意：请在本目录下运行本脚本，不要在根目录下运行，相对路径的问题暂时还没有修复
+"""
 
 # 改进的模型路径查找
-def find_model_path(model_filename="model_4_2M.pt"):
+def find_model_path(model_filename=EVALUATE_MODEL):
     # 1. 检查当前目录
     if os.path.exists(model_filename):
         return model_filename
